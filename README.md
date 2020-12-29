@@ -1,4 +1,4 @@
-# Food and Friends - Virtual Dinner Parties, No Friends Required
+# Friends and Food - Virtual Dinner Parties, No Friends Required
 
 #### Team Members:
 Adam Caplan - Software Engineer  
@@ -31,4 +31,4 @@ Our first step was to scour the web for similar ideas - we knew about pre-pandem
 
 There are also a handful of caterers offering virtual dinner party kits for groups - these are offered as coursed out meals, delivered to each participant with reheating instructions. For examples, see: [The Pickled Fork](https://thepickledfork.com/deliveries/virtual-dinner-parties/) and [Dinner by David](https://thepickledfork.com/deliveries/virtual-dinner-parties/).
 
-However, in our research we weren't able to find what we are looking for - specifically, a way to support community restaurants while bringing strangers together. Thus, Food and Friends was born!
+However, in our research we weren't able to find what we are looking for - specifically, a way to support community restaurants while bringing strangers together. Thus, Friends and Food was born!
