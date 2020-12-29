@@ -2,13 +2,17 @@ import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
 
-import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
-import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
-import Header from './components/Header/Header'
-import SignUp from './components/SignUp/SignUp'
-import SignIn from './components/SignIn/SignIn'
-import SignOut from './components/SignOut/SignOut'
-import ChangePassword from './components/ChangePassword/ChangePassword'
+import AuthenticatedRoute from './components/Auth/AuthenticatedRoute/AuthenticatedRoute'
+import AutoDismissAlert from './components/Auth/AutoDismissAlert/AutoDismissAlert'
+import Header from './components//Header'
+import SignUp from './components/Auth/SignUp'
+import SignIn from './components/Auth/SignIn'
+import SignOut from './components/Auth/SignOut'
+import ChangePassword from './components/Auth/ChangePassword'
+import Restaurant from './components/Restaurant'
+import Review from './components/Review'
+import Confirmation from './components/Confirmation'
+import Welcome from './components/Welcome'
 
 class App extends Component {
   constructor () {
@@ -64,6 +68,18 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/' render={(props) => (
+            <Restaurant msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/welcome' render={(props) => (
+          <Welcome user={user} />
+        )} />
+          <AuthenticatedRoute user={user} exact path='/confirm' render={(props) => (
+            <Confirmation msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/review' render={(props) => (
+            <Review msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>
