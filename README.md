@@ -18,6 +18,12 @@ Overall, we concluded that we wanted our web app to meet the following needs:
 - Intuitive user flow
 - Create a scalable web app that any restaurant with online ordering can use
 
+#### How It Works:
+1. A restaurant signs up for this platform and provides a few different dates/times for availability.
+2. A customer comes to the website, selects the restaurant and date/time they would like to join, and then goes through the user flow of selecting their food, providing a delivery address/instructions, and payment
+3. Orders are submitted to the restaurant and the customer receives a confirmation page and email with the google calendar event, which includes a google meet link
+4. Food arrives in time for the event, and customers get to make new friends!
+
 
 ### Outside Research
 
