@@ -13,6 +13,7 @@ import Restaurant from './components/Restaurant'
 import Review from './components/Review'
 import Confirmation from './components/Confirmation'
 import Welcome from './components/Welcome'
+import Payment from './components/Payment'
 
 class App extends Component {
   constructor () {
@@ -56,7 +57,9 @@ class App extends Component {
             deleteAlert={this.deleteAlert}
           />
         ))}
+
         <main className="container">
+          <div className="banner"></div>
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
@@ -69,10 +72,10 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} exact path='/' render={(props) => (
+          <AuthenticatedRoute user={user} exact path='/restaurant' render={(props) => (
             <Restaurant msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/welcome' render={(props) => (
+          <AuthenticatedRoute user={user} path='/restaurant' render={(props) => (
           <Welcome user={user} />
         )} />
           <AuthenticatedRoute user={user} exact path='/confirm' render={(props) => (
@@ -80,6 +83,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} exact path='/review' render={(props) => (
             <Review msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/' render={(props) => (
+            <Payment msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>

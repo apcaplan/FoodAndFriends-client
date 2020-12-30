@@ -23,18 +23,19 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
-    <Navbar.Brand href="#">
-      Friends and Food
-    </Navbar.Brand>
+  <Navbar expand="md">
+    <div className="logo" href="#">
+      Friends & Food
+    </div>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
+        { user && <span className="greeting navbar-text mr-2">Welcome, {user.email}</span>}
         { alwaysOptions }
         { user ? authenticatedOptions : unauthenticatedOptions }
       </Nav>
     </Navbar.Collapse>
+    <div className="banner"></div>
   </Navbar>
 )
 

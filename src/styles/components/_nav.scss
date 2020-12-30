@@ -1,0 +1,27 @@
+@import '../base/_variables';
+
+.greeting {
+  font-family: $font2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.logo {
+  color: #D35C3F;
+  letter-spacing: 0.01em;
+  line-height: 98.2%;
+  font-family: $logo;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: normal;
+
+  position: absolute;
+  width: 139px;
+  height: 74px;
+}
+
+.banner {
+  background: url(images/pexels-fauxels-3184183.jpg);
+}

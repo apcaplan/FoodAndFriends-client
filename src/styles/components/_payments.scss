@@ -1,0 +1,90 @@
+// /* HIDE RADIO */
+// [type=radio] {
+//   position: absolute;
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
+//
+// /* IMAGE STYLES */
+// [type=radio] + img {
+//   cursor: pointer;
+// }
+//
+// /* CHECKED STYLES */
+// [type=radio]:checked + img {
+//   outline: 2px solid #f00;
+// }
+
+
+
+// [type=radio] {
+//   position: absolute;
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
+
+h3 {
+  font-family: Helvetica;
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  padding-left: .75em;
+  padding-right: .75em;
+  width: 25%;
+}
+
+.cardInfo {
+  border: 4px solid rgba(113, 140, 106, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 5em;
+}
+
+.cc {
+  display: flex;
+  justify-content: center;
+}
+
+.creditCards img{
+  display: inline-block;
+  height: auto;
+  width: 75%;
+}
+
+.creditCards label:checked {
+  outline: 3px solid #4F4F4F;
+}
+
+.creditCards label:hover {
+  transform:scale(1.2);
+}
+
+.delivery {
+  border: 4px solid #DED797;
+  padding: 2em 5em;
+}
+
+.formLabel {
+  width: 100%;
+}
+
+.sameCheck {
+  // display: inline-block;
+  // margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  background: linear-gradient(rgba(113, 140, 106, 0.8), rgba(113, 140, 106, 1));
+  border-color: rgb(113, 140, 106);
+  height: 60px;
+  float: right;
+  margin: 3em 0;
+  width: 200px;
+}
